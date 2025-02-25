@@ -7,13 +7,13 @@ import { useAuth } from "@/context/AuthContext";
 import DropDown from "./DropDown";
 
 interface NavbarProps {
-  section3Ref: RefObject<HTMLDivElement | null>;
-  section8Ref: RefObject<HTMLDivElement | null>;
+  section3Ref?: React.RefObject<HTMLDivElement | null>;
+  section8Ref?: React.RefObject<HTMLDivElement | null>;
 }
 const Navbar: React.FC<NavbarProps> = ({ section3Ref, section8Ref }) => {
   const { isLoggedIn } = useAuth();
 
-  const scrollToSection = (sectionRef: React.RefObject<HTMLDivElement | null>) => {
+  const scrollToSection = (sectionRef: React.RefObject<HTMLDivElement | null> | undefined) => {
     if (sectionRef?.current) {
       sectionRef.current.scrollIntoView({ behavior: "smooth" });
     }

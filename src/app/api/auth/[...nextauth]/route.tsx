@@ -21,12 +21,12 @@ const handler = NextAuth({
       }
       return token;
     },
-    async session({ session, token }) {
-      if (session.user) {
-        session.user.id = token.id;
-      }
-      return session;
-    },
+    // async session({ session, token }) {
+    //   if (session.user) {
+    //     session.user.id = token.id;
+    //   }
+    //   return session;
+    // },
   },
   secret: process.env.NEXTAUTH_SECRET,
 });
