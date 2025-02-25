@@ -38,7 +38,7 @@ const Navbar: React.FC<NavbarProps> = ({ section3Ref, section8Ref }) => {
           { name: "How It Works", action: () => scrollToSection(section8Ref) },
           { name: "Support", path: "/Support" },
           { name: "Marketplace", path: "/Marketplace" },
-          { name: "About", action: () => scrollToSection(section3Ref) }, // Scrolls to Section8
+          { name: "About", action: () => scrollToSection(section3Ref) }, 
           { name: "Search", path: "/Search" },
         ].map((item, index) => (
           <span
