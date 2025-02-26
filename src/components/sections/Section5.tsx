@@ -24,7 +24,7 @@ const Section5 = () => {
             </Label>
           </div>
         </motion.div>
-        <div className="mx-2 grid grid-cols-1 gap-6 md:mx-20 md:grid-cols-3">
+        <div className="mx-2 font-prata grid grid-cols-1 gap-6 md:mx-20 md:grid-cols-3">
           {[
             {
               title: "For Individuals",

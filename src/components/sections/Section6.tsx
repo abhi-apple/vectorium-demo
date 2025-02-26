@@ -12,59 +12,75 @@ const Section6 = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
         >
-          <div className="px-6 py-16 text-center md:px-32 md:py-32 font-prata leading-tight">
+          <div className="px-6 py-16 text-center font-prata leading-tight md:px-32 md:py-32">
             <Label className="bg-gradient-to-r from-[#C4A44D] via-[#f7f595] to-[#C4A44D] bg-clip-text font-serif text-4xl font-medium text-transparent md:text-[2.8rem]">
-              Empowering Individuals and Businesses to <br className="hidden md:block" /> Offset Their
-              Footprint
+              Empowering Individuals and Businesses to{" "}
+              <br className="hidden md:block" /> Offset Their Footprint
             </Label>
           </div>
         </motion.div>
       </div>
 
-      <div className="flex flex-wrap items-center justify-center px-6 md:px-32 gap-6 md:gap-12">
-        <div className="flex flex-col text-center md:text-left font-raleway text-[#cfcbbf]">
-          <div className="mt-2 text-[20px] font-semibold">Calculate</div>
-          <div className="mt-2 text-[16px] font-semibold">
-            Use our AI-powered carbon footprint calculator to assess your impact.
+      <div className="flex flex-col items-center px-6 md:flex-row md:items-start md:px-32">
+        {/* Left Text */}
+        <div className="flex flex-col text-center font-raleway text-[#cfcbbf] md:text-left">
+          <div className="mt-2 text-lg font-semibold md:text-[20px]">
+            Calculate
+          </div>
+          <div className="mt-2 text-sm font-semibold md:text-[16px]">
+            Use our AI-powered carbon footprint calculator to assess your
+            impact.
           </div>
         </div>
 
-        <div className="text-gray flex items-center justify-center w-12 h-12 md:w-20 md:h-20 rounded-full bg-[#535455ff] text-xl text-[#cfcbbf]">
-          1
+        {/* Numbers */}
+        <div className="mt-4 flex flex-row md:mt-0">
+          <div className="ml-4 rounded-[110px] rounded-br-none bg-[#535455ff] p-6 font-raleway text-lg text-[#cfcbbf] md:ml-14 md:p-11 md:text-xl">
+            1
+          </div>
+          <div className="ml-2 rounded-[110px] rounded-bl-none bg-[#535455ff] p-6 font-raleway text-lg text-[#cfcbbf] md:p-11 md:text-xl">
+            2
+          </div>
         </div>
 
-        <div className="text-gray flex items-center justify-center w-12 h-12 md:w-20 md:h-20 rounded-full bg-[#535455ff] text-xl text-[#cfcbbf]">
-          2
-        </div>
-
-        <div className="flex flex-col text-center md:text-left font-raleway text-[#cfcbbf]">
-          <div className="mt-2 text-[20px] font-semibold">Offset</div>
-          <div className="mt-2 text-[16px] font-semibold">
-            Purchase the exact amount of VCCs needed to neutralize your emissions.
+        {/* Right Text */}
+        <div className="flex flex-col pl-4 text-center font-raleway text-[#cfcbbf] md:pl-16 md:text-left">
+          <div className="mt-2 text-lg font-semibold md:text-[20px]">
+            Offset
+          </div>
+          <div className="mt-2 text-sm font-semibold md:text-[16px]">
+            Purchase the exact amount of VCCs needed to neutralize your
+            emissions.
           </div>
         </div>
       </div>
 
-      <div className="flex flex-wrap items-center justify-center px-6 md:px-32 gap-6 md:gap-12 mt-6">
-        <div className="flex flex-col text-center md:text-left font-raleway text-[#cfcbbf]">
-          <div className="mt-2 text-[20px] font-semibold">Share</div>
-          <div className="mt-2 text-[16px] font-semibold">
-            Showcase your commitment to sustainability with shareable certificates and badges.
+      <div className="mt-4 flex flex-col items-center px-6 md:mt-0 md:flex-row md:items-start md:px-32">
+        {/* Left Text */}
+        <div className="flex flex-col text-center font-raleway text-[#cfcbbf] md:text-left">
+          <div className="mt-2 text-lg font-semibold md:text-[20px]">Share</div>
+          <div className="mt-2 text-sm font-semibold md:text-[16px]">
+            Showcase your commitment to sustainability with shareable
+            certificates and badges.
           </div>
         </div>
 
-        <div className="text-gray flex items-center justify-center w-12 h-12 md:w-20 md:h-20 rounded-full bg-[#535455ff] text-xl text-[#cfcbbf]">
-          3
+        {/* Numbers */}
+        <div className="mt-4 flex flex-row md:mt-0">
+          <div className="ml-4 rounded-l-[110px] rounded-br-[110px] bg-[#535455ff] p-6 font-raleway text-lg text-[#cfcbbf] md:ml-[149px] md:p-11 md:text-xl">
+            4
+          </div>
+          <div className="ml-2 rounded-[110px] rounded-tl-none bg-[#535455ff] p-6 font-raleway text-lg text-[#cfcbbf] md:p-11 md:text-xl">
+            3
+          </div>
         </div>
 
-        <div className="text-gray flex items-center justify-center w-12 h-12 md:w-20 md:h-20 rounded-full bg-[#535455ff] text-xl text-[#cfcbbf]">
-          4
-        </div>
-
-        <div className="flex flex-col text-center md:text-left font-raleway text-[#cfcbbf]">
-          <div className="mt-2 text-[20px] font-semibold">Track</div>
-          <div className="mt-2 text-[16px] font-semibold">
-            Monitor your ongoing carbon neutrality status with our real-time dashboard.
+        {/* Right Text */}
+        <div className="flex flex-col pl-4 text-center font-raleway text-[#cfcbbf] md:pl-16 md:text-left">
+          <div className="mt-2 text-lg font-semibold md:text-[20px]">Track</div>
+          <div className="mt-2 text-sm font-semibold md:text-[16px]">
+            Monitor your ongoing carbon neutrality status with our real-time
+            dashboard.
           </div>
         </div>
       </div>
