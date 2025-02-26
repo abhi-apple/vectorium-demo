@@ -24,7 +24,7 @@ const Section3 = forwardRef<HTMLDivElement, {}>((props, ref) => {
               alt="Trading Illustration"
               width={500}
               height={400}
-              className="rounded-lg shadow-lg"
+              className="rounded-lg w-screen shadow-lg"
             />
           </div>
         </motion.div>
